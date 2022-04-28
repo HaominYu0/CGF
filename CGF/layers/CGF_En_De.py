@@ -108,7 +108,6 @@ class CGF_En_De(nn.Module):
 
     def forward(self, auxiliary, st_his, st_level, tgt_seq, mode, v=0):
         encoder_outputs, encoder_hidden = self.encoder(st_his)
-        # decoder_input = auxiliary  #X_is_wrf_pr;edict
         decoder_hidden = encoder_hidden
         current_pm25 = st_his[:, -1, :1]
         if mode == "train":
