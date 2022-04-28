@@ -1,6 +1,6 @@
 # CGF
 This is a PyTorch implementation of the paper: CGF: A Category Guidance Based PM2.5 Sequence
-Forecasting Training Framework. In order to show our modules in framework
+Forecasting Training Framework. In order to show our modules in CGF
  more clearly, we plug CGF into a simple Encoder-Decoder struture.
 `@author:Haomin Yu, Jilin Hu, Xinyuan Zhou, Chengjuan Guo, Bin Yang, Qingyong Li`
 
@@ -23,7 +23,7 @@ The model is implemented using Python3 with dependencies specified in requiremen
 
 ## Datasets
 
-###Download Datasets
+### Download Datasets
 Download KnowAir from (https://github.com/shawnwang-tech/PM2.5-GNN)
 
 ### Preparing datasets
@@ -42,7 +42,6 @@ Set `config_dict['IsTrain'] = True` in `config.py`, and then run `main.py`.
 
 ```
 python main.py 
-
 ```
 
 ## Model Testing
@@ -52,7 +51,6 @@ Set `config_dict['IsTrain'] = False` in `config.py`, and then run `main.py`.
 
 ```
 python main.py 
-
 ```
 
 ## Model Hyperparameters
